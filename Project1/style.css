@@ -1,0 +1,329 @@
+body{
+    margin: 0;
+    font-family: "Libre Baskerville", serif;
+}
+
+/* Nav Bar */
+.nav{
+    grid-area: nav;
+    border: 2px solid black;
+    display: flex;
+    justify-content: space-around;
+    justify-content: space-between;
+    background-color: #895845;
+}
+
+.nav h1{
+    font-size: 1rem;
+}
+
+.link-lists{
+    display: flex;
+    gap: 20px;
+    list-style: none; 
+    margin: 0; 
+    padding-top: 1rem;   
+}
+
+a {
+    color: black;
+}
+
+
+
+/* Outer Container */
+
+.container-OuterAll{
+    display: grid;
+    grid-template-columns:  1fr 200px;
+    grid-template-rows: 1fr auto ;
+    grid-template-areas:
+    "main-Title main-Title"
+    "first-section resources"
+    "second-section resources"
+    "third-section resources"
+    ;
+}
+
+/* Main Area */
+
+.main-Title{
+    grid-area: main-Title;
+    padding: 1rem;
+    background-color: #BD937D;
+}
+
+.mainT{
+    text-align: center;
+    background-image: url("file:///C:/Users/amy/Documents/CODING/Projects/AppleFarm/img/IMG_7603%20-%20Copy.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-left: 5%;
+    margin-right: 5%;
+    border: solid 5px #C32B35;  
+}
+
+.mainT h1{
+    font-size: clamp(20px, 3vw, 80px);
+    margin-left: 8%;
+    margin-right: 8%;
+    padding-right: .5rem;
+    padding-right: .5rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    text-shadow: 1px 1px 2px rgb(255, 0, 43);
+}
+
+/* first */
+
+
+.first-section{
+    background-color: #D6AD81;
+}
+
+.first-about{
+    display: flex;
+    padding: 1rem;
+}
+
+.text1{
+    text-align: center; 
+    background-color: #99A7A2;  
+    padding-right: .5rem;
+    padding-right: .5rem;
+}
+
+.img1{
+    width: 10%;
+    border: solid 7px #C32B35;   
+}
+
+
+
+/* second */
+
+.second-section{
+    grid-area: second-section;
+    background-color: #D6AD81;
+}
+
+/* Apple */
+.intro-apple{
+text-align: center;
+background-color: #C32B35;
+padding-top: .1rem;
+padding-bottom: .1rem;
+}
+
+.apple{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    display: flex;
+    gap: 10px;
+    margin-left: .5rem;  
+}
+
+.text2 p{
+   margin: 2rem;
+}
+
+.img2{
+    width: 15%; 
+    gap: 10px;
+    border: solid 7px #C32B35;   
+}
+
+/* Pear */
+.intro-pear{
+    text-align: center;
+    background-color: #C32B35;
+    padding-top: .1rem;
+    padding-bottom: .1rem;
+}
+
+
+.pear{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    display: flex;
+    gap: 10px;
+    margin-left: .5rem;
+}
+
+.text3 p{
+    margin: 2rem;
+}
+
+.img3{
+    width: 15%;  
+    border: solid 7px #C32B35;    
+}
+
+
+/* third */
+.third-section{
+grid-area: third-section;
+text-align: center;
+background-color: #D6AD81;
+}
+
+.info{
+    justify-content: center;
+    background-color: #C32B35;
+    padding-top: .1rem;
+    padding-bottom: .1rem;
+}
+
+
+
+.Img-button{
+padding-top: 1rem;
+padding-bottom: 2rem;
+border: solid 2px rgb(13, 172, 7);
+justify-content: center;
+gap: 10px;
+display: flex;
+
+}
+
+.button-A{
+    justify-content: center;
+}
+
+
+.img4{
+    width: 30%; 
+    border: solid 7px #C32B35;     
+}
+
+.button-B{
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+.img5{
+    border: solid 7px #C32B35;    
+    background-color: #C32B35;
+    width: 80%;
+    padding-left: 10%; 
+    padding-right: 10%; 
+}
+
+
+.button-C{
+    justify-content: center;
+}
+
+
+.img6{
+    border: solid 7px #C32B35;    
+    width: 30%; 
+}
+
+
+
+
+
+/* resources */
+.resources{
+    grid-area: resources; 
+    background-color: #99A7A2;  
+    border: solid 3px #C32B35;    
+    padding-left: 1rem;
+    padding-top: 1rem;
+    
+}
+
+
+.img7{
+    width: 80%; 
+    border: solid 7px #C32B35;    
+}
+
+
+
+
+/* responsive Nav Bar */
+@media(width <= 500px){
+    .nav{
+        flex-direction: column;
+        text-align: center;
+    }
+    .main-Title{
+        flex-direction: column;
+    }  
+
+    .first-about{
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+    .img1{
+        text-align: center;
+        align-items: center;
+    }
+    .intro-apple{
+        flex-wrap: wrap;
+        }
+    .apple{
+        flex-direction: column; 
+        text-align: center;
+        align-items: center; 
+    } 
+    
+    
+}
+
+
+@media(width <= 650px){
+
+    .img1{
+        
+        text-align: center;
+        align-items: center;
+    }
+      
+}
+
+@media(width <= 700px){
+    .nav{
+        flex-direction: column;
+        text-align: center;
+    }
+    .first-about{
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+    .img1{
+        text-align: center;
+        width: 20%;
+    }
+
+    .intro-apple{
+        flex-wrap: wrap;
+        }
+    .apple{
+        flex-direction: column; 
+        text-align: center;
+        align-items: center; 
+    } 
+    
+    .intro-pear{
+        flex-wrap: wrap;
+    }
+    
+    .pear{
+        flex-direction: column; 
+        text-align: center;
+        align-items: center; 
+
+    }
+
+}
+
+
+
