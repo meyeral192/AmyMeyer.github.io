@@ -57,7 +57,7 @@ a {
 
 .mainText{
     text-align: center;
-    background-image: url("../Users/amy/Documents/CODING/Projects/MyWebsite/Resources/IMG_5588.jpg");
+    background-image: url("Resources\IMG_5588.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     text-shadow: 4px 5px #000000;
