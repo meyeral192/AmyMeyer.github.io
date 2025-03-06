@@ -1,0 +1,333 @@
+
+*{
+    margin: 0px;
+}
+body{
+    background-color: #FEF0D4;
+    font-family: "Merriweather", serif;
+}
+
+
+/* Nav Bar */
+.nav{
+    grid-area: nav;
+    border: 2px solid black;
+    display: flex;
+    justify-content: space-around;
+    justify-content: space-between;
+    background-color: #3E1715;
+    color: white;
+}
+
+.nav h1{
+    font-size: 1rem;
+}
+
+.link-lists{
+    display: flex;
+    gap: 20px;
+    list-style: none; 
+    margin: 0; 
+    padding-top: 1rem;   
+}
+
+a {
+    color: black;
+    color: white;
+}
+
+
+.container-OuterAll{
+    display: grid;
+    grid-template-columns:  1fr 1fr;
+    grid-template-rows: 1fr auto ;
+    grid-template-areas: 
+    "header-container header-container"
+    "first-container first-container"
+    "second-container second-container"
+    "third-container third-container"
+    ;
+}
+
+
+.header-container{
+    grid-area: header-container;
+    background-color: #FEF0D4;
+    text-align: center;
+    align-items: center;
+    padding-bottom: 1rem;
+    justify-content: center;
+
+    
+}
+ 
+.header{
+    border: 2px solid rgb(0, 247, 255); 
+    margin-top: 1rem;
+    margin-left: 10%; 
+    margin-right: 10%; 
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    background-image: url("file:///C:/Users/amy/Documents/CODING/Projects/MYarnClub/Img/IMG_8244.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.header h1{
+    margin-left: 5%; 
+    margin-right: 5%; 
+    color: white;
+    background-color: #9F6E7E; 
+    font-size: clamp(30px, 4vw, 150px)
+    
+}
+
+
+
+.header-text{
+    margin-left: 3rem; 
+    margin-right: 3rem;
+    background-color: #9F6E7E;
+}
+
+.header-text h3 {
+    margin-left: 3rem; 
+    margin-right: 3rem;
+    color: white;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    
+}
+
+/* First section */
+
+.first-container{
+    grid-area: first-container;
+}
+
+.first-Mtext{
+    background-color:#6A484C;
+    text-align: center;
+    padding: .5rem;
+    color: white;
+}
+
+.first-Mtext2{
+    background-color:#9F6E7E;
+    padding: .5rem;
+    margin-bottom: .5rem;
+}
+
+.group1-first{
+    background-color:#FEF0D4;
+    display: grid;
+    margin-bottom: 1rem;
+    flex-wrap: wrap;
+    grid-template-columns:  1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr auto ;
+    grid-template-areas: 
+    "sect1 sect1 sect2 sect2"
+    "sect3 sect3 sect4 sect4"
+    "sect5 sect5 sect6 sect6"   
+    ;
+}
+
+.sect1{
+    border: 2px solid rgb(0, 0, 0); 
+    grid-area: sect1;
+    display: flex;
+    
+}
+
+.text1{
+    padding-left: 1rem;
+    padding-right: .5rem;
+}
+
+.sect2{
+    border: 2px solid rgb(0, 0, 0); 
+    grid-area: sect2;
+    display: flex;
+}
+
+.text2{
+    padding-left: 1rem;
+    padding-right: .5rem;
+   }  
+
+
+.sect3{
+    border: 2px solid rgb(0, 0, 0); 
+    grid-area: sect3;
+    display: flex;
+}
+
+.text3{
+    padding-left: 1rem;
+    padding-right: .5rem;
+}
+
+.sect4{
+    border: 2px solid rgb(0, 0, 0); 
+    grid-area: sect4;
+    display: flex;
+}
+
+.text4{
+    padding-left: 1rem;
+    padding-right: .5rem;
+}
+
+.sect5{
+    border: 2px solid rgb(0, 0, 0); 
+    grid-area: sect5;
+    display: flex;
+}
+
+.text5{
+    padding-left: 1rem;
+    padding-right: .5rem;
+}
+
+.sect6{
+    border: 2px solid rgb(0, 0, 0); 
+    grid-area: sect6;
+    display: flex;
+}
+
+.text6{
+    padding-left: 1rem;
+    padding-right: .5rem;
+}
+
+.img1{
+width: 20%;
+height: auto;
+padding-left: 1rem;
+border: 5px solid #9F6E7E;
+
+}
+
+/* Second section */
+
+.second-container{
+    grid-area: second-container;
+}
+
+.second-Stext{
+    background-color:#6A484C;
+    text-align: center;
+    padding: .5rem;
+    color: white;
+}
+.second-Stext2{
+    background-color:#9F6E7E;
+}
+.yarn-second{
+    background-color:#FEF0D4;
+    display: flex;
+    column-gap: 30px;
+    text-align: center;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.img2{
+    width: 10%;
+    border: 5px solid #9F6E7E;
+    
+    }
+
+    .img2A{
+        width: 15%;
+        height: auto;
+        border: 5px solid #9F6E7E;   
+    }
+
+/* Third section */
+
+.third-container{
+    grid-area: third-container;
+    justify-content: center;
+    text-align: center;
+    background-color:#FEF0D4;;
+}
+
+
+.third-Stext3{
+    background-color:#6A484C;
+    text-align: center;
+    padding: .5rem;
+    color: white; 
+}
+
+.third{
+    margin-left: 5%; 
+    margin-right: 5%;
+    background-color:#FEF0D4;;
+    }
+
+.third-cont{
+    margin-left: 10%; 
+    margin-right: 10%; 
+    background-image: url("file:///C:/Users/amy/Documents/CODING/Projects/MYarnClub/Img/IMG_5252.jpg");
+    }
+    
+
+.third-text {
+border: 4px solid rgb(0, 0, 0); 
+margin-left: 20%; 
+margin-right: 20%;
+padding: 3rem;
+background-color:#9F6E7E;
+color: white;
+font-size: clamp(12px, 1vw, 30px)
+}
+
+.footer{
+    background-color:#6A484C;
+    padding: .5rem;
+    color: white;  
+}
+
+
+
+/* responsive Nav Bar */
+@media(width <= 500px){
+    .nav{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .group1-first{
+        display: block;
+        flex-wrap: wrap;
+        grid-template-columns: 1fr;
+}
+.yarn-second{
+    display: flex;
+    column-gap: 10px;
+    row-gap: 10px;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+}
+
+@media(width <= 700px){
+
+    .group1-first{
+        display: block;
+        flex-wrap: wrap;
+        grid-template-columns: 1fr;
+    }   
+    .yarn-second{
+        display: flex;
+        column-gap: 20px;
+        row-gap: 10px;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+}
+
