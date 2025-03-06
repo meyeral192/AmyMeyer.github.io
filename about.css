@@ -1,0 +1,163 @@
+body{
+    margin: 0;
+    background-color: #494742;
+}
+
+/* Nav Bar */
+.nav{
+    grid-area: nav;
+    border: 2px solid black;
+    display: flex;
+    justify-content: space-around;
+    justify-content: space-between;
+    background-color: #5D171C;
+    color: white;
+}
+
+.nav h1{
+    font-size: 1rem;
+    padding-left: 1rem;   
+}
+
+.link-lists{
+    display: flex;
+    gap: 20px;
+    list-style: none; 
+    padding-right: 1rem;    
+}
+
+a {
+    
+    color: white;
+}
+
+
+/* Nav Bar */
+
+
+.container-About{
+    text-align: center;
+  
+}
+
+.image-about{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    background-color: #67645D;
+}
+
+.image-A{
+    border: 9px solid #8B140B;
+    width: 30%;
+    margin-left: 10%;
+}
+
+
+
+
+.text{
+    border: 9px solid #8B140B;
+    background-color: #B99F87;
+    font-size: clamp(20px, 1vw, 60px);
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    margin-left: 10%;
+    margin-right: 10%;
+    line-height: 1.5rem;
+    color: white;
+}
+
+
+.footer{
+    text-align: center;
+    background-color: #8B140B; 
+    color: white;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+}
+
+
+
+
+
+/* responsive Nav Bar */
+@media(width <= 500px){
+    .nav{
+        flex-direction: column;
+        text-align: center;
+    }
+    .image-about{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;   
+    }
+    .image-A{
+        width: 30%;
+        margin-bottom: 5%;
+        margin-left: 0%;
+    }
+}
+
+
+@media(width <= 650px){
+    .nav{
+        flex-direction: column;
+        align-items: center;
+    }
+    .image-about{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;   
+    }
+    .image-A{
+        width: 30%;
+        margin-bottom: 5%;
+        margin-left: 0%;
+    }
+    
+}
+
+@media(width <= 700px){
+    .nav{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .image-about{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;   
+    }
+    .image-A{
+        width: 30%;
+        margin-bottom: 5%;
+        margin-left: 0%;
+    }
+    
+}
+
+
+
+@media(width <= 1100px){
+
+    .image-about{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;   
+    }
+    .image-A{
+        width: 30%;
+        margin-bottom: 5%;
+        margin-left: 0%;
+    }
+    
+}

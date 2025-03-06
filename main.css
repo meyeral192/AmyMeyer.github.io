@@ -1,0 +1,381 @@
+body{
+    margin: 0;
+    background-color: #494742;
+}
+
+/* Nav Bar */
+.nav{
+    grid-area: nav;
+    border: 2px solid black;
+    display: flex;
+    justify-content: space-around;
+    justify-content: space-between;
+    background-color: #5D171C;
+    color: white;
+}
+
+.nav h1{
+    font-size: 1rem;
+    padding-left: 1rem;   
+}
+
+.link-lists{
+    display: flex;
+    gap: 20px;
+    list-style: none; 
+    padding-right: 1rem;    
+}
+
+a {
+    
+    color: white;
+}
+
+
+/* Container All */
+.container-All{
+    display: grid;
+    grid-template-columns:  1fr 200px;
+    grid-template-rows: 1fr auto ;
+    grid-template-areas:
+    "introduction introduction"
+    "second-section second-section"
+    "third-section third-section"
+    "fourth-section fourth-section"
+    "fith-section fith-section"
+    "footer footer"
+    ;
+}
+
+/* Introduction Section */
+.introduction{
+    grid-area: introduction;
+    border: 2px solid black;
+    color: white;
+}
+
+
+.mainText{
+    text-align: center;
+    background-image: url("file:///C:/Users/amy/Documents/CODING/Projects/MyWebsite/Resources/IMG_5588.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-shadow: 4px 5px #000000;
+    margin-left: 2%;
+    margin-right: 2%;
+    padding: 5%;
+}
+
+.text-main{
+    margin-left: 20%;
+    margin-right: 20%;
+    font-size: clamp(20px, 2vw, 150px);
+    
+}
+
+
+/* Second Section */
+.second-section{
+    grid-area: second-section;  
+}
+
+.intro-Text{
+
+    display: flex; 
+    text-align: center;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    background-color: #AE9F8C;
+    color: white;
+}
+
+.text-introA{
+    background-color: #B99F87; 
+    border: 5px solid #5D171C; 
+    margin-left: 5%;
+    margin-right: 5%;
+    padding-right: 8%;
+    padding-left: 8%;
+}
+
+.text-introB{
+    border: 5px solid #5D171C; 
+    background-color: #B99F87; 
+    margin-left: 5%;
+    margin-right: 5%;
+    padding-right: 8%;
+    padding-left: 8%;
+}
+
+/* Third Section */
+.third-section{
+    grid-area: third-section;
+    background-color: #494742;
+    color: white;
+      
+}
+
+
+
+.third-projectText{
+    border: 2px solid rgb(0, 0, 0); 
+    background-color: #5D171C;
+}
+
+.third-projects{
+    border: 2px solid rgb(0, 0, 0); 
+    margin-left: 5%;
+    margin-right: 5%;
+    display: grid;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    grid-template-columns:  1fr 200px;
+    grid-template-rows: 1fr auto ;
+    grid-template-areas: 
+    "sect1 sect1"
+    "sect2 sect2"
+    "sect3 sect3"
+    ;
+}
+
+.sect1{
+    grid-area: sect1;
+    border: 2px solid rgb(0, 0, 0); 
+    padding-left: 5%;  
+    padding-right: 5%;  
+    padding-top: 1%;
+    background-color: #858383;  
+}
+
+.sect2{
+    grid-area: sect2; 
+    border: 2px solid rgb(0, 0, 0); 
+    padding-left: 5%;  
+    padding-right: 5%; 
+    padding-top: 1%; 
+    background-color: #858383;  
+}
+
+.sect3{
+    grid-area: sect3; 
+    border: 2px solid rgb(0, 0, 0); 
+    background-color: #858383;
+    padding-left: 5%;  
+    padding-right: 5%;
+    padding-top: 1%;  
+}
+
+.imageM{
+    border: 9px solid #5D171C; 
+    width: 90%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+
+.textA{
+    margin-bottom: 20%;    
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.textA h4{
+    background-color: #8B140B;
+    text-align: left; 
+    padding-left: 5%;
+}
+
+.textA p{
+    background-color: #8B140B; 
+}
+
+
+/* Fourth Section */
+.fourth-section{
+    grid-area: fourth-section; 
+    background-color: #494742;
+}
+
+.fourth-projectText{
+    background-color: #5D171C; 
+    
+}
+
+.fourth-projects{
+    border: 2px solid rgb(0, 0, 0); 
+    margin-left: 5%;
+    margin-right: 5%;
+    display: grid;
+    display: flex; 
+    text-align: center;
+    color: white;  
+    justify-content: center;
+    grid-template-columns:  1fr 200px;
+    grid-template-rows: 1fr auto ;
+    grid-template-areas: 
+    "sect4 sect4"
+    "sect5 sect5"
+    "sect6 sect6"
+    ;
+}
+
+.textB{
+    background-color: #8B140B; 
+}
+
+.sect4{
+    grid-area: sect4;
+    padding-left: 5%;  
+    padding-right: 5%;  
+    padding-top: 1%;
+    border: 2px solid rgb(0, 0, 0); 
+    background-color: #858383;
+}
+
+.sect5{
+    grid-area: sect5; 
+    padding-left: 5%;  
+    padding-right: 5%; 
+    padding-top: 1%; 
+    border: 2px solid rgb(0, 0, 0); 
+    background-color: #858383;
+}
+
+.sect6{
+    grid-area: sect6; 
+    padding-left: 5%;  
+    padding-right: 5%;
+    padding-top: 1%;  
+    border: 2px solid rgb(0, 0, 0);   
+    background-color: #858383;
+}
+
+.imageM1{
+    border: 9px solid #5D171C; 
+    width: 90%;
+}
+
+.textC{
+    margin-left: 5%;
+    margin-right: 5%;
+    background-color: #8B140B; 
+}
+
+
+
+
+.fith-section{
+    grid-area: fith-section;
+    background-color: #AE9F8C;
+
+}
+
+.fith-Location{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    color: white;   
+}
+
+.textD{
+    border: 5px solid #5D171C;  
+    padding-left: 10%;  
+    padding-right: 10%;
+    background-color: #B99F87; 
+}
+
+.textE{
+    border: 5px solid #5D171C;  
+    margin-left: 5%;
+    margin-right: 5%;
+    padding-left: 10%;  
+    padding-right: 10%;
+    background-color: #B99F87; 
+}
+
+.textF{
+    border: 5px solid #5D171C; 
+    padding-left: 10%;  
+    padding-right: 10%;
+    background-color: #B99F87; 
+}
+
+
+
+.footer{
+    grid-area: footer;  
+    text-align: center;
+    background-color: #8B140B; 
+    color: white;
+}
+
+
+
+
+
+/* responsive Nav Bar */
+@media(width <= 500px){
+    .nav{
+        flex-direction: column;
+        text-align: center;
+    }
+    .intro-Text{
+        flex-direction: column;
+    }
+    .third-projects{
+        flex-direction: column;
+        text-align: center;
+    }
+    .fith-Location{
+        flex-direction: column;
+        text-align: center;
+    }    
+}
+
+
+@media(width <= 650px){
+    .nav{
+        flex-direction: column;
+        align-items: center;
+    }
+    .intro-Text{
+        flex-direction: column;
+    }
+    .third-projects{
+        flex-direction: column;
+        text-align: center;
+    }
+    .fith-Location{
+        flex-direction: column;
+        text-align: center;
+    }    
+}
+
+@media(width <= 700px){
+    .nav{
+        flex-direction: column;
+        align-items: center;
+    }
+    .intro-Text{
+        flex-direction: column;
+        text-align: center;
+    }
+    .third-projects{
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .fourth-projects{
+        flex-direction: column;
+        text-align: center;
+    }
+    .fith-Location{
+        flex-direction: column;
+        text-align: center;
+    }     
+}

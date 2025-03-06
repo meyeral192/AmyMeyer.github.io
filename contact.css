@@ -1,0 +1,298 @@
+body{
+    background-color: #494742; 
+    margin: 0;
+  }
+  
+  .nav{
+    grid-area: nav;
+    border: 2px solid black;
+    display: flex;
+    justify-content: space-around;
+    justify-content: space-between;
+    background-color: #5D171C;
+    color: white;
+}
+
+.nav h1{
+    font-size: 1rem;
+    padding-left: 1rem;   
+}
+
+.link-lists{
+    display: flex;
+    gap: 20px;
+    list-style: none; 
+    padding-right: 1rem;    
+}
+
+a {
+    
+    color: white;
+}
+
+.title{
+
+    text-align: center;
+    font-size: clamp(25px, 2vw, 150px); 
+    color: white;
+}
+
+
+.contact-outerC{
+    margin-left: 4rem;
+    margin-right: 4rem;
+    padding: 8rem;
+    background-color: #8b8888; 
+}
+.contact-box{
+    background-color: #AE9F8C; 
+
+    margin-left: 1rem;
+    margin-right: 1rem;
+    padding: 2rem;
+    gap: 3rem;
+    position: relative;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: auto;
+
+    grid-template-areas: 
+    "newForm newInfo"
+    "newForm newInfo"  
+}
+
+.newForm{
+    grid-area: newForm;
+    border: 8px solid #5D171C; 
+    margin-left: 1rem;
+    margin-right: 1rem;
+    padding: 1rem;
+    background-color: #B99F87; 
+
+}
+
+.contact{
+    padding: 3rem;
+    box-shadow: 0 5px 35px  rgb(73, 73, 73);
+}
+
+.contact h3{
+    color: white;
+    font-size: clamp(25px, 1vw, 150px);
+    background-color: #8B140B; 
+    border: 3px solid black;  
+}
+
+.form{
+    grid-area: form;
+    border: 2px solid rgb(134, 7, 7);  
+    background-color: #AE9F8C;
+    margin-left: 3rem;
+    font-size: clamp(16px, 1vw, 150px);
+    
+}
+
+
+.info{
+    grid-area: info;
+    margin-right: 3rem;
+}
+
+
+
+.formbox{
+border: 3px solid black; 
+position: relative;
+background-color: #8B140B; 
+padding: .5rem;
+}
+
+.formbox .row50{
+    display: flex;
+    gap: 20px;
+}
+
+.inputbox{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    width: 50%;
+
+}
+
+
+.inputbox span{
+color: white
+
+}
+
+.inputbox input{
+    padding: .5rem;
+    outline: none;
+    border: 3px solid rgb(0, 0, 0);  
+}
+
+.inputbox textarea{
+    padding: .5rem;
+    outline: none;
+    border: 3px solid rgb(0, 0, 0);
+    resize: none;  
+    height: 3rem;
+}
+
+.inputbox input[type="submit"]{
+    background-color: gray;
+    color: white;
+    cursor: pointer;
+}
+
+.inputbox ::placeholder{
+    color: black;
+}
+
+
+
+
+.newInfo{
+    grid-area: newInfo;
+    border: 8px solid #5D171C; 
+    margin-left: 1rem;  
+    padding: 1rem;
+    background-color: #B99F87;  
+    color: white;
+}
+
+.infobox{
+    background-color: #8B140B; 
+    padding-top: 3rem;
+    padding-bottom: 5rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+
+.location{
+    color: white;
+    
+}
+.email{
+    color: white;
+}
+.Phone{
+    color: white;
+}
+
+
+.text2{
+    color: white;
+    background-color: #4E171A;
+    text-align: center;
+    padding: 5px;
+  }
+
+
+
+
+
+/* responsive Nav Bar */
+@media(width <= 500px){
+    .nav{
+        flex-direction: column;
+        text-align: center;
+    } 
+    .contact-box{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    
+    }
+    .row100{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      
+    }
+
+}
+
+
+@media(width <= 650px){
+    .nav{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-box{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    
+    }     
+    .row100{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      
+    }
+}
+
+@media(width <= 700px){
+    .nav{
+        flex-direction: column;
+        align-items: center;
+    }
+
+ 
+    .contact-box{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    
+    }
+    .formbox .row50{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .inputbox{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .row100{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      
+    }
+}
+@media(width <= 900px){
+    .contact-box{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    
+    }
+    .row100{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      
+    }
+}
+
+@media(width <= 1100px){
+    .contact-box{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    
+    }
+    .row100{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      
+    }
+}
